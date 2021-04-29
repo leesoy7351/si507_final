@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF8"/>
+    <title>Select State</title>
+    <style>
+        body {
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+        }
+        .alert-error {
+                  padding: 8px;
+                  background-color: rgba(235, 196, 196, 0.973);
+                  color: black;
+                }
+        </style>
+</head>
+<body>
+        <h1>Select State</h1>
+        <form action='/bar/result' method='POST'>
+        <p>
+            Type the name of state <input name="state_bar" type="text"/>
+        <input type='submit' value='Select'/>
+        </p>
+        </form>
+        {% for message in get_flashed_messages() %}
+        <div class="alert-error">Error: {{ message }}</div>
+      {% endfor %}
+        <br>
+        <p><a href='/'>Home</a></p>
+    </body>
+    </html>

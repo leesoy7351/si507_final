@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF8"/>
+    <title>Select Year</title>
+    <style>
+        body {
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+        }
+        </style>
+</head>
+<body>
+    <h1>Select Year</h1>
+    <form action='/heatmap/result' method='POST'>
+    <p>
+    Year: <br/>
+        <input type='radio' name='year_heatmap'
+                value='2018' checked='checked'/> 2018 <br/>
+        <input type='radio' name='year_heatmap'
+                value='2019'/> 2019 <br/>
+        <input type='radio' name='year_heatmap'
+                value='2020' /> 2020 <br/>
+        <input type='radio' name='year_heatmap'
+                value='2021'/> 2021 <br/>
+    </p>
+    <input type='submit' value='Select'/>
+    </form>
+    <br>
+    <p><a href='/'>Home</a></p>
+</body>
+</html>
