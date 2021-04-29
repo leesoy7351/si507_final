@@ -17,7 +17,8 @@ This project consists of two python files
 - a table that lists all the incidents (including description) of US Mass Shoointgs in the year user selected
 
 ## Python Packages Used
-- Beautifulsoup
-- Flask
+- bs4
+- flask
+- requests
 - plotly
 - pandas
